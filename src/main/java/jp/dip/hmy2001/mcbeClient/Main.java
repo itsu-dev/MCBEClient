@@ -1,5 +1,6 @@
 package jp.dip.hmy2001.mcbeClient;
 
+import jp.dip.hmy2001.mcbeClient.client.MCBEClient;
 import jp.dip.hmy2001.mcbeClient.utils.*;
 
 import org.apache.commons.logging.Log;
@@ -30,7 +31,7 @@ public class Main {
         this.console.removePromptLine();
         this.console.start();
 
-        mcbeClient = new MCBEClient(config.get("serverAddress"), Integer.parseInt(config.get("serverPort")), config.get("username"), config.get("clientUUID"));
+        mcbeClient = new MCBEClient(config.get("serverAddress"), Integer.parseInt(config.get("serverPort")), Integer.parseInt(config.get("protocolId")), config.get("username"), config.get("clientUUID"));
 
         CommandReader.getInstance().stashLine();
         logger.info("MCBEClient starting now....");

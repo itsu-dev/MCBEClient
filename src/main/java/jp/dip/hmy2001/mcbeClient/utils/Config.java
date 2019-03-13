@@ -37,6 +37,7 @@ public class Config {
             properties.setProperty("serverAddress", "localhost");
             properties.setProperty("serverPort", "19132");
             properties.setProperty("username", "Hmy2001Sub");
+            properties.setProperty("protocolId", "313");
             properties.setProperty("clientUUID", uuid.toString());
 
             properties.store(new FileOutputStream(getFilePath()));
