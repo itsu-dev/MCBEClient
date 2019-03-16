@@ -1,5 +1,5 @@
 # MCBEClient
-
+You CAN chat with someone in pmmp or Nukkit servers through this tool.  
 This software can connect to BDS, pmmp with offlinemode.
 
 ## How to use
